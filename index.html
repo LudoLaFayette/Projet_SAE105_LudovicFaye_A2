@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fémokipédia, la vraie page des femmes sans point de vue">
+    <title>Artificial - Acceuil</title>
+    <link rel='stylesheet' href='src/css/styles.css'>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>   
+</head>
+
+
+<body x-data="{ atTop: true }">
+
+    <header class="header__acceuil container" 
+                    @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+                    :class="{ 'header--atTop' : !atTop }" >
+
+
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+    
+        <!-- Menu principal -->
+        
+                <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="index.html">Acceuil</a></li>
+                    <li class="menu__item"><a class="menu__link" href="FigureCoco.html">Her</a></li>
+                    <li class="menu__item"><a class="menu__link" href="FemStyles.html">Spike Jonze</a></li>
+                    <li class="menu__item"><a class="menu__link" href="glossaire.html">Blade runner</a></li>                
+                    <li class="menu__item"><a class="menu__link" href="a propos.html">A propos</a></li>
+                    <li class="menu__item menu__item--btn"><a class="menu__link" href="nous contacter.html">Contact</a></li>
+                    <li class="menu__item"><a class="menu__link" href="autres projets.html">Autres projets</a></li>
+                </ul>
+                </nav>
+        <!-- Fin du menu principal -->
+    
+            </div>
+            
+       
+            <h1 class="index__h1">Artificial</h1>
+        
+    
+   
+        
+            <div class="blockquote__premier">
+                <blockquote >
+                    “Ce sont des gens. Ils ont besoin d’oxygène. Toi tu n’es pas une personne.”
+                </blockquote>
+            </div>
+    
+            <div class="button__play">
+                <figure>
+                    <img src="public/svg/Group 30.svg" alt="play__vidéo">
+                </figure>
+            </div>
+            
+            <div class="button__suiteLecture">
+                <figure>
+                    <img src="public/svg/Vector.svg" alt="flèche suite">
+                </figure>
+            </div>
+        
+        
+
+    </header>
+ 
+   <main class="main__acceuil">
+
+        <article>
+            Les Intelligences Artificielles sont
+l’avenir de la technologie. Sur ce site
+découvrez plusieurs facettes de
+cette avancée qui va sûrement
+révolutioner le monde.
+        </article>
+
+        <div class="index__tweet">
+            
+            <img src="public/img/image 1 7.webp" alt="her">  
+            <h2>Her</h2>
+            <p>
+                à qu’un nouveau système
+                d’exploitation intelligent vient desortir. Tellement développé que
+                Théodore va, lui, en tomber
+                amoureux.
+            </p>
+            <p>Découvrir</p>
+                        
+        </div>
+
+       
+
+    </main> 
+
+<footer >
+        <p>PierrePolJ</p>
+        <img src="public/img/Icone Facebook 1.webp" alt="Facebook logo">
+        <img src="public/img/Icon Instagram 2.webp" alt="Icon Instagram">
+        <img src="public/img/Icone Mail 2.webp" alt="mail du site">
+        <p>
+            Projet réalisé dans le cadre d’un exercice
+pédagogique au département MMi de Montbéliard.
+        </p>
+</footer>
+    
+</body>
+</html>

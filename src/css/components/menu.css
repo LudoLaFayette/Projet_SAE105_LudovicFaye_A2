@@ -1,0 +1,92 @@
+/* Pour construire le menu en mobile : 
+On construit le menu tel qu'il sera une fois ouvert.
+On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le menu. */
+.menu {
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+ width: 100vw;
+    background: linear-gradient(180deg, rgb(254,178,47) 0%, rgb(217,45,60) 85%);
+    font-size: var(--text-xl);
+    letter-spacing: var(--letter-spacing);
+    transition: all .4s ease-in-out;
+  }
+  /* On se sert de Javascript pour ajouter une classe sur le menu lorsqu'on clique sur le bouton de menu pour le faire apparaître */
+  .menu--open {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Mise en forme des éléments du menu */
+  .menu__list {
+    margin-top: 15vh;
+    text-align: center;
+  }
+  
+  .menu__item {
+    margin-top: 12.5%;
+    font-family: var(--font-texte-subtitle) ;
+    font-weight: normal;  
+    color: #ffff;
+  }
+  
+  .menu__link {
+    color: var(--grey-dark);
+    text-decoration: none;
+  }
+  
+  
+  /* Mise en forme du bouton de menu "Hamburger" */
+  .menu-btn {
+    position: absolute;
+    z-index: 3;
+    width: 30px;
+    top: 36px;  
+  }
+  
+  .menu-btn__bar,
+  .menu-btn__bar::before,
+  .menu-btn__bar::after {
+    content: '';
+    background: var(--menu-button);
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    transition: all .4s ease-in-out;
+  }
+  
+  .menu-btn__bar::before {
+    top: -10px;
+  }
+  
+  .menu-btn__bar::after {
+    top: 10px;
+  }
+  
+  /* Technique pour transformer les 3 barres du bouton de menu en croix
+  Ne pas oublier d'ajouter une transition plus haut pour l'animation */
+  .menu-btn--open .menu-btn__bar,
+  .menu-btn--open .menu-btn__bar::before,
+  .menu-btn--open .menu-btn__bar::after {
+    transform: rotate(135deg);
+  }
+  
+  .menu-btn--open .menu-btn__bar::before,
+  .menu-btn--open .menu-btn__bar::after {
+    transform: rotate(90deg);
+    top: 0;
+  }
+  
+  .header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar,
+  .header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::before,
+  .header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::after {
+    background-color: var(--menu-button);
+  }

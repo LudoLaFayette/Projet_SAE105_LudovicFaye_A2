@@ -1,0 +1,82 @@
+/* Transforme le modèle de boite par défaut pour inclure dans la largeur et la hauteur, les marges intérieures et les bordures. */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  } 
+
+h1{
+  font-family: var(--font-texte-header);
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--menu-button);  
+}
+
+.index__h1{
+  font-family: var(--font-texte-header);
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #FFFF;  
+  text-align: center;
+  
+} 
+.index__tweet{
+   background-color:  white;
+   border-radius: 8px 8px 8px 8px;
+   box-shadow: 8px 8px 2px 1px black;
+   text-align: center;
+   margin: 0 érem;
+}
+.index__tweet img{
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 8px ;
+  border-top-right-radius: 8px;
+}
+.main__acceuil{
+    background: rgb(217,45,60);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.blockquote__premier{
+   font-family: var(--font-texte-intro);
+   margin-top: 200px;
+   font-weight: 300;
+   font-size: 25px;
+   color: white;
+   text-align: center;
+}
+.main__acceuil article{
+  font-family: var(--font-texte-main);
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  margin: 40px 40px;
+}
+
+/* Pour enlever l'apparence par défaut des listes */
+.list-unstyled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  /* Bug IOS
+=> L'overflow doit être appliqué sur l'élément body ET html
+pour faire disparaître le scroll sur safari IOS */
+.noscroll,
+.noscroll body {
+  overflow: hidden;
+}
