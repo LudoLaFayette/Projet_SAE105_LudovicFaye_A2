@@ -1,6 +1,39 @@
 footer{
     background-color: var(--fond-footer);
+    height: auto;
+    padding: var(--space1x) var(--space2x);
+    
 }
 .footer__auteur{
     font-family: var(--font-texte-footer);
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    margin-top: auto;
+    font-size: 35px;
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+.footer__logos{
+    display: flex;
+    gap: var(--space1x);
+    justify-content:space-around;
+}
+
+.footer__texteLogo{
+    display: flex;    
+    text-align:start;
+    align-items: center;    
+}
+
+.footer__texteLogo p{
+    padding-top: 10px;
+    color: white;
+    font-weight: 400;
+    font-family: var(--font-texte-footer);
+    font-size: 15px;    
+}
+
+.footer__texteLogo img{
+    margin-right: 10px;
 }
