@@ -1,0 +1,43 @@
+.index__tweet{
+    background-color:  white;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 8px 8px 2px 1px black;
+    text-align: center;
+    margin: 5rem 2.5rem;
+ }
+ .index__tweet img{
+   max-width: 100%;
+   height: auto;
+   border-top-left-radius: 8px ;
+   border-top-right-radius: 8px;
+   line-height: 1.15;
+ }
+
+ .index__tweet h2{
+    font-family: var(--font-texte-tweet);
+    font-weight: 400;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 22px;
+ }
+ .tweet__acroche{
+    font-family: var(--font-texte-tweet);
+    font-weight: 400;
+    font-size: 18px;
+    margin: 34px 24px;
+    text-align: left;
+ }
+
+.tweet__buttonTxt{
+    font-family: var(--font-texte-tweet);    
+    text-align: right;
+    margin-right: 10px;
+    border-top: 0.5px solid #D9DBDD;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight:bold;
+    text-transform: uppercase;
+ }
+.tweet__buttonTxt a{
+    color: var(--menu-button);
+}

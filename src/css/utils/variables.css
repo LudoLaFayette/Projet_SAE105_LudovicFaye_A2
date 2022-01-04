@@ -1,18 +1,19 @@
 
 :root{
     /*Fonts*/
-    --font-texte-main : 'Raleway';
-    --font-texte-header: 'Josefin Sans';
-    --font-texte-footer: 'AlegreyaSans'; 
-    --font-texte-intro: 'Josefin Sans', light;
-    --font-texte-subtitle :'Josefin Sans';
+    --font-texte-main : 'Raleway', sans-serif;
+    --font-texte-header: 'Josefin Sans', sans-serif;
+    --font-texte-footer: 'Raleway', sans-serif; 
+    --font-texte-intro: 'Josefin Sans', sans-serif;
+    --font-texte-subtitle :'Josefin Sans', sans-serif;
+    --font-texte-tweet: 'Raleway', sans-serif;
 
   /*colors fonds*/
   --background-header: #ED4580;
   --menu-button: rgba(217,45,60,1);
   --menu-fond: #F2F2F2;
   --fond-footer:#404040;
-  
+
 
 
 

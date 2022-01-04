@@ -7,11 +7,10 @@
 @import url("base/main.css");
 @import url("base/media.css");
 
-@import url("layout/navbar.css");
 @import url("layout/header.css");
 @import url("layout/footer.css");
 
 
-@import url("components/hero.css");
+@import url("components/tweet.css");
 @import url("components/button.css");
 @import url("components/menu.css");

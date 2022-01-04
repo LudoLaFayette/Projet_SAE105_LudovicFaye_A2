@@ -31,19 +31,7 @@ h1{
   text-align: center;
   
 } 
-.index__tweet{
-   background-color:  white;
-   border-radius: 8px 8px 8px 8px;
-   box-shadow: 8px 8px 2px 1px black;
-   text-align: center;
-   margin: 0 érem;
-}
-.index__tweet img{
-  max-width: 100%;
-  height: auto;
-  border-top-left-radius: 8px ;
-  border-top-right-radius: 8px;
-}
+
 .main__acceuil{
     background: rgb(217,45,60);
     display:flex;
