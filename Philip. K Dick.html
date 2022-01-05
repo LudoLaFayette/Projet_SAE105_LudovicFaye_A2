@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artificial">
+    <title>Artificial - Blade Runner</title>
+    <link rel='stylesheet' href='src/css/styles.css'>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>   
+</head>
+
+
+<body x-data="{ atTop: true }">
+
+    <header class="header container" 
+                    @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+                    :class="{ 'header--atTop' : !atTop }" >
+
+
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+    
+        <!-- Menu principal -->
+        
+                <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                    <ul class="menu__list list-unstyled">
+                        <li class="menu__item"><a class="menu__link" href="index.html">Acceuil</a></li>
+                        <li class="menu__item"><a class="menu__link" href="Her.html">Her</a></li>
+                        <li class="menu__item"><a class="menu__link" href="Spike Jonze.html">Spike Jonze</a></li>
+                        <li class="menu__item"><a class="menu__link" href="Blade Runner.html">Blade runner</a></li> 
+                        <li class="menu__item"><a class="menu__link" href="Philip. K Dick.html">Philip. K Dick</a></li>               
+                        <li class="menu__item"><a class="menu__link" href="a propos.html">A propos</a></li>
+                        <li class="menu__item menu__item--btn"><a class="menu__link" href="nous contacter.html">Contact</a></li>
+                        <li class="menu__item"><a class="menu__link" href="autres projets.html">Autres projets</a></li>
+                    </ul>
+                </nav>
+        <!-- Fin du menu principal -->
+    
+            </div>
+            
+       
+            <h1>Artificial</h1>
+    </header>
+
+    
+    <main>
+
+        <div class="header__tampon"></div>
+        <img src="public/img/Image 1 7 (3).webp" alt="Philip K Dick">
+
+        <div class="article__titre">
+            <h2>Philip K Dick</h2>
+        </div>
+
+        <h2>
+            Qui est-ce ?
+        </h2>
+
+        <article class="article__intro">
+            Philip Kindred Dick est un écrivain américain. Il
+appartient au mouvement du post-modernisme.
+Durant sa carrière il va s’orienter vers le genre
+fantastique et la science fiction.
+        </article>
+
+        <figure>
+            <img src="public/img/image -6 1.webp" alt="Photo de Philip K Dick">
+            <figcaption>
+                « In my writing I even question the universe; I wonder out loud if it is
+real, and I wonder out loud if all of us are real. »
+            </figcaption>
+        </figure>
+
+        <h2>
+            Quelques informations sur sa vie
+        </h2>
+
+        <article>
+            Alors qu’il n’était âgé que de quelques semaines
+Philip perd sa soeur jumelle. À ses 4 ans ses
+parents se séparent et son père mets à terme
+tout relation. <br>
+Dès petit il est passionné de littérature et de
+musique. <br>
+Il décide donc plus tard de faire de la littérature
+son métier. Il va se tourner vers la science-fiction
+et le fantastique. <br>
+Paranoïaque et schizophrène, il consomme des
+amphétamines pour rester productif.
+Cependant, son succès est incontestable. Il
+reçoit plusieurs prix littéraires au cours de sa vie.
+Par exemple le prix Hugo ou encore le prix John
+Wood Campbell Memorial.
+        </article>
+
+        <article>
+            Il avait son propre style d’écriture et a influencé
+pleins de personnes. Il a notamment influencé
+Charlie Kaufman (scénariste qui a beaucoup 
+travaillé avec Spike Jonze).
+        </article>
+
+        <article>
+            Beaucoup de ses oeuvres seront adaptées au
+            cinéma et seront populaires. Par exemple Blade
+            Runner, Passenger, Total Recall ou encore Ghost
+            in the Shell qui s’est inspiré de sa philosophie.
+        </article>
+
+        <article>
+            Aujourd’hui décédé, ses oeuvres continuent à
+faire parler de lui. <br>
+Grand écrivain, le prix littéraire Philip K Dick a été
+créé pour lui rendre hommage.
+        </article>
