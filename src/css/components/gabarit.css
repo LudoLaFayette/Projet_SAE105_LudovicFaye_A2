@@ -1,0 +1,197 @@
+hr {
+	border-bottom: solid 1px #FF4B4B;
+	margin: 2em 0;
+}
+
+.exemples {
+	display: grid;									/* Disposition en grille CSS */
+	grid-template-columns: 1fr 2fr 1fr;				/* Tailles des colonnes : chaque ligne contient 3 cellules */
+	row-gap: 0px;									/* Espacement entre les lignes */
+	column-gap: 0px;								/* Espacement entre les colonnes */
+	grid-auto-rows: minmax(100px, auto);			/* Tailles maximum et minimum des lignes : une ligne ne peut pas faire moins de 100px 
+														même si la largeur de l'écran est inférieure (on ne verra plus le bout de la ligne.
+														Les largeurs de cellules s'étireront et s'espaceront automatiquement sans limite max */
+}
+			
+.entete {
+	grid-column: 1 / 4;			/* La div "entete" tient sur les colonnes 1 à 4 (colonne 4 non incluse) */
+	grid-row: 1;				/* Elle tient sur la première ligne de la grille */
+}
+	
+.line {
+	grid-column: 2;
+	grid-row: 2;
+	width: 100%;
+	padding: 1px;
+}
+
+.grille {
+	grid-column: 2;
+	grid-row: 2;
+  	position: relative;
+  	display: flex;
+  	width: 100%;
+  	min-height: 200px;
+  	flex-direction: column;
+  	width: 290px;
+  	height: 100%;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.objet, .square {
+	background-color: #FF4B4B;
+	width: 28px;
+	height: 28px;
+	margin: 1px;
+	font-size: 14px;
+	position: relative;
+}
+
+.shadow {
+	opacity: .2;
+	position: absolute;
+}
+
+.full {
+	margin-left: 28px;
+}
+
+.small {
+  width: 18px;
+  height: 18px;
+  /*background-color: #00D672;*/
+  position: relative;
+}
+
+path {
+	stroke: #FF4B4B; /*#FFFFFF;*/ /*#8453E3;*/
+	stroke-width: 1px;
+}
+
+.follow-path {
+	position: relative;
+	top: 9px;
+	left: -9px;
+}
+
+.visionneuse {
+	grid-column: 2;
+	grid-row: 2;
+	width: 500px;
+	height: 323px;
+	padding: 1px;
+	position: relative;
+	overflow: hidden;
+}
+
+.image img{
+	width: 100%;
+	z-index: 1;
+	position: relative;
+}
+		
+.texte13 {
+	position: relative;
+	text-align: center;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	z-index: 2;
+	line-height: 5em;
+	color: black;
+	background-color: rgba(255, 255, 255, 0.55);
+	top: 0;
+	display: none;
+}		
+	
+.illustration {
+	grid-column: 2;
+	grid-row: 2;
+	width: 1000px;
+	height: 323px;
+	padding: 0px;
+	position: relative;
+	overflow: hidden;
+}
+
+.image14 {
+	width: 50%;
+	position: relative;
+	z-index: 2;
+}
+
+.image14 img{
+	width: 100%;
+	height: 100%;
+}
+		
+.texte14 {
+	position: absolute;
+	text-align: left;
+	width: 45%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	line-height: 5em;
+	color: black;
+	background-color: rgba(255, 255, 255, 0.55);
+	top:0;
+	z-index: 1;
+}
+
+.texte14 h1 {
+	padding: 0;
+	margin: 0;
+	margin-left: 0.3em;
+	background-color: rgba(255, 255, 255, 0);
+	width: 100%;
+	color: black;
+}	
+	
+.texte14 p{
+	background-color: rgba(255, 255, 255, 0);
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	margin-left: 0.9em;
+	color: black;
+	font-family: Helvetica;
+}
+
+.carrousel {
+	grid-column: 2;
+	grid-row: 2;
+	width: 80vw;
+	padding: 0px;
+	position: relative;
+	overflow: hidden;
+    
+}
+
+.droite15 {
+	grid-row: 2;
+	grid-column: 1;
+	width: 40px;
+}
+
+.images15 {
+	width: 6600px;
+	height: 323px;
+	left:0;
+}
+
+.images15 img{
+	width: 80vw;
+	height: 107vw;
+}
+
+.image15 {
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 0;
+}
