@@ -103,6 +103,13 @@ main h2{
   margin: 20px 20px;
 }
 
+.h2__premier{
+  margin-top: 25px;
+  font-family: var(--font-texte-subtitle);
+  margin: 20px 20px;
+ text-align: center;
+}
+
 blockquote{
   font-family: var(--font-texte-intro);
   color: rgb(217,45,60);
