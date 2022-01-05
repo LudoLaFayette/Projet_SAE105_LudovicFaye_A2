@@ -19,7 +19,8 @@ h1{
   font-weight: bold;
   font-size: 20px;
   text-transform: uppercase;
-  color: var(--menu-button);  
+  color: var(--menu-button); 
+  text-align: center; 
 }
 
 .index__h1{
@@ -55,6 +56,37 @@ h1{
   margin: 40px 40px;
 }
 
+.article__titre{
+    background-color: white;
+    color: var(--menu-button);
+    font-family: var(--font-texte-header);
+    font-weight: bold;
+    text-align: center;
+    margin: -35px 6.25rem 0 ;
+    border-radius: 40px;
+    position: relative;
+    height: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.article__titre h2{
+  padding-top: 10px;
+  
+}
+.article__intro{
+  font-family: var(--font-texte-intro);
+  font-style: italic;
+  font-weight: 400;
+  font-size:14px;
+  line-height: 1.50;
+  margin: 12px;
+}
+
+main h2{
+  margin-top: 25px;
+  font-family: var(--font-texte-subtitle);
+  margin: 8px;
+}
 /* Pour enlever l'apparence par défaut des listes */
 .list-unstyled {
     list-style: none;

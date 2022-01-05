@@ -6,7 +6,6 @@
     width: 100%;
     z-index: 2;
     padding: var(--space2x) var(--space3x);
-    display: flex;
     justify-content: space-between;
     transition: all .3s ease-in-out;
     border-bottom: 0.5px solid #95989A;
@@ -23,7 +22,7 @@
   height: 100vh;
 }
 .header--atTop {
-    background-color: rgb(254,178,47);
+    background-color: #FFFF);
   }
   
  
@@ -41,7 +40,7 @@
 .header__tampon{
     display:block;
     background-color: var(#FFFF);
-    height: 13.5vh;
+    height: 7vh;
     margin-bottom: 25px;
 }
 /*.header__tamponAcceuil{
