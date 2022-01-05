@@ -2,15 +2,29 @@
     display:flex;
     gap:var(--space2x);
     align-items: center;
-    margin-top :8px;
+    margin : 30px 12px;
     font-family: var(--font-texte-main);
     line-height: 1.25;
     font-weight: 400;
-    margin: 12px;
+}
+.main__txtEtImg figure{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__txtEtImg article{
+        font-family: var(--font-texte-main);
+        font-weight: 400;
+        font-size:14px;
+        line-height: 1.50;
+        margin: 30px 12px;
+      
 }
 figure{
     display: flex;
-    margin: auto;
+    margin: 40px;
     flex-direction: column;
     align-items: center;
 }
@@ -22,4 +36,8 @@ figcaption{
     font-style: italic;
     font-size: 15px;
     font-weight: 300;
+}
+.her__image4{
+    margin: auto;
+    text-align: center;
 }
