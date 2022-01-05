@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Artificial">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artificial - Error Page</title>
+    <link rel="stylesheet" href="./error_page.css" />
+    <link rel='stylesheet' href='src/css/styles.css'>
+    <script
+      src="https://kit.fontawesome.com/66aa7c98b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>   
+  </head>
+  <body x-data="{ atTop: true }">
+
+    <body x-data="{ atTop: true }">
+
+        <header class="header container" 
+                        @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+                        :class="{ 'header--atTop' : !atTop }" >
+    
+    
+                <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @pointerdown="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
+                </button>
+        
+            <!-- Menu principal -->
+            
+                    <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                        <ul class="menu__list list-unstyled">
+                            <li class="menu__item"><a class="menu__link" href="index.html">Acceuil</a></li>
+                            <li class="menu__item"><a class="menu__link" href="Her.html">Her</a></li>
+                            <li class="menu__item"><a class="menu__link" href="Spike-Jonze.html">Spike Jonze</a></li>
+                            <li class="menu__item"><a class="menu__link" href="Blade-Runner.html">Blade runner</a></li> 
+                            <li class="menu__item"><a class="menu__link" href="Philip-K-Dick.html">Philip. K Dick</a></li>               
+                            <li class="menu__item"><a class="menu__link" href="a-propos.html">A propos</a></li>
+                            <li class="menu__item menu__item--btn"><a class="menu__link" href="nous-contacter.html">Contact</a></li>
+                            <li class="menu__item"><a class="menu__link" href="autres-projets.html">Autres projets</a></li>
+                        </ul>
+                    </nav>
+            <!-- Fin du menu principal -->
+        
+                
+                
+           
+                <h1>Artificial</h1>
+        </header>
+<main>
+    <div class="header__tampon"></div>
+
+    <div class="container">
+      <div class="gif">
+        <img src="https://i.postimg.cc/2yrFyxKv/giphy.gif" alt="gif_ing" />
+      </div>
+      <div class="content">
+        <h1 class="main-heading">Error 404</h1>
+        <p>
+          La page que vous avez recherché est introuvable.
+        </p>
+        <a href="index.html" target="blank">
+          <button>Retour à l'acceuil <i class="far fa-hand-point-right"></i></button>
+        </a>
+      </div>
+    </div>
+</main>
+  </body>
+</html>
