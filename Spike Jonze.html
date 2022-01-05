@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fémokipédia, la vraie page des femmes sans point de vue">
+    <title>Artificial - Spike Jonze</title>
+    <link rel='stylesheet' href='src/css/styles.css'>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>   
+</head>
+
+
+<body x-data="{ atTop: true }">
+
+    <header class="header container" 
+                    @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+                    :class="{ 'header--atTop' : !atTop }" >
+
+
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+    
+        <!-- Menu principal -->
+        
+                <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                    <ul class="menu__list list-unstyled">
+                        <li class="menu__item"><a class="menu__link" href="index.html">Acceuil</a></li>
+                        <li class="menu__item"><a class="menu__link" href="Her.html">Her</a></li>
+                        <li class="menu__item"><a class="menu__link" href="Spike Jonze.html">Spike Jonze</a></li>
+                        <li class="menu__item"><a class="menu__link" href="Blade Runner.html">Blade runner</a></li>                
+                        <li class="menu__item"><a class="menu__link" href="a propos.html">A propos</a></li>
+                        <li class="menu__item menu__item--btn"><a class="menu__link" href="nous contacter.html">Contact</a></li>
+                        <li class="menu__item"><a class="menu__link" href="autres projets.html">Autres projets</a></li>
+                    </ul>
+                </nav>
+        <!-- Fin du menu principal -->
+    
+            </div>
+            
+       
+            <h1>Artificial</h1>
+    </header>
+
+    <main>
+
+        <div class="header__tampon"></div>
+        <img src="public/img/Image 1 7 (1).webp" alt="Spike Jonze">
+
+        <div class="article__titre">
+            <h2>Spike Jonze</h2>
+        </div>
+
+        <h2>Les relations entre Humains et IA</h2>
+
+        <article class="article__intro">
+            Spike Jonze, de son vrai nom Adam Spiegel, est un
+célèbre réalisateur et acteur américain. En 22 ans de
+carrière, ce quarantenaire a fait parler de lui. Plusieurs
+ fois nominés dans des festivals il s’est vu récompenser
+pour son travail. </br>
+Retour sur le parcours d’une star d’Hollywood…
+        </article>
+        
+        <figure>
+            <img src="public/img/Image 3 1 (1).webp" alt="Spike Jonze - Interview Magazine">
+            <figcaption>
+                Spike Jonze - Interview Magazine
+            </figcaption>
+        </figure>
+    
+        <h2>
+            Le sport et la musique
+        </h2>
+
+        <article>
+            Spike Jonze a commencé sa carrière dans le
+monde du sport. Étant passionné de BMX et
+skateboard il s’illustre d’abord en faisant des
+vidéos sur le sujet. Il sera photographe pour un
+magazine de BMX et deviendra le vidéaste de la
+célèbre marque de skateboard “Girl &
+Chocolate”. </br>
+Il sortira “VideoDays” en 1991 qui sera sa
+première réussite. </br>
+Quoi de mieux pour un passionné ?
+        </article>
+
+        <article>
+            En parallèle il réalise les clips de plusieurs
+artistes tels que The Beastie Boys, The
+Notorious B.I.G, Daft Punk… </br>
+Plus récemment il a réalisé les clips de Kanye
+West.
+        </article>
+
+        <h2>
+            Les débuts de sa carrière
+        </h2>
+
+        <article>
+            Adam Spiegel commença sa carrière d’acteur au
+cinéma en 1994. Son premier rôle était dans le
+film My Crazy Life (Mi vida loca) d'Allison Anders.
+Il y jouait le rôle d’un drogué (sympa pour
+commencer). </br>
+Il réalisera la même année son premier court-métrage “Ciao L.A.”.
+Cinq ans plus tard il réalise son premier long
+métrage “Dans la peau de John Malkovich". Il
+sera basé sur un scénario de Charlie Kaufman
+avec qui il travaille beaucoup. Ce fut un succès
+qui sera nommé sept fois dans les festivals. Dont
+une nomination pour “meilleur réalisateur” aux
+Oscar 2000. Il sera récompensé à deux reprises
+au festival du cinéma américain de Deauville.
+En 1999, il jouera avec Mark Wahlberg, George
+Clooney et le rappeur Ice Cube dans Rois du
+désert.
+        </article>
+
+        <figure>
+            <img src="public/img/Image 4 1 (1).webp" alt="Spike Jonze - Clash Magazine">
+            <figcaption>
+                Spike Jonze - Clash Magazine
+            </figcaption>
+        </figure>
+
+        <h2>
+            Son ascension au début du 21° siècle
+        </h2>
+
+        <article>
+            Il connait une ascension entre 2000 et 2013 où il
+réalisera son plus grand chef-d’oeuvre.
+        </article>
+
+        <article>
+            En 2000, il commence à produire une série
+intitulée “Jackass”. Une série dans laquelle un
+groupe d’amis se donnent des défis plus fous
+les uns que les autres. Un remake français de
+Jackass sortira en 2004 sous le nom de “Les
+Onze Commandements”. Il produira plusieurs
+volets de cette série.
+        </article>
+
+        <article>
+            En 2003, il réalise son deuxième long-métrage
+et deuxième succès “Adaptation”. Spike Jonze
+verra son oeuvre nommée dans 8 catégorie et
+se verra récompensé du Grand Prix du jury (Ours
+d’Argent).
+        </article>
+
+        <blockquote>
+            “Je n’ai pas cherché à faire un film pour les
+enfants ; j’ai voulu faire un film sur
+l’enfance”
+        </blockquote>
+
+        <article>
+            Six ans plus tard il sort l’adaptation du livre “Max
+et les Maximonstres”. Ce fut encore un succès.
+En 2011, son court-métrage “Mourir auprès de
+toi” (coréalisé avec Simon Cahn) se voit nommé
+5 fois également.
+        </article>
+        <article>
+            Mais c’est en 2013 que sa carrière explosera.
+        </article>
+</body>
+
+
+</html>
