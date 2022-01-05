@@ -96,6 +96,14 @@ article{
   margin: 30px 45px;
   text-align: center;
 }
+.article3{
+  font-family: var(--font-texte-main);
+  font-weight: 400;
+  font-size:22px;
+  line-height: 1.50;
+  margin: 30px 30px;
+  color: #FFFF;
+}
 .article__livresEx{
   font-family: var(--font-texte-main);
   font-weight: 400;
@@ -109,6 +117,9 @@ article{
 main h2{
   font-family: var(--font-texte-subtitle);
   margin: 20px 20px;
+}
+.contact__bkgrd{
+  background: linear-gradient(180deg, rgb(254,178,47) 0%, rgb(217,45,60) 85%);
 }
 
 .h2__premier{
@@ -142,4 +153,25 @@ pour faire disparaître le scroll sur safari IOS */
 .noscroll,
 .noscroll body {
   overflow: hidden;
+}
+
+.contact__formulaire{
+  width: 200px;
+clear: both;
+margin-left: 8px;
+
+}
+.contact__formulaire input{
+width: 300px;
+height: 30px;
+clear: both;
+margin: 20px 20px;
+border-radius: 8px 8px 8px 8px;
+}
+.contact__formulaire textarea{
+  margin-top: 8px;
+  width:300px;
+  height: 300px;
+  border-radius: 8px 8px 8px 8px;
+  margin: 20px 20px 60px 20px;
 }
