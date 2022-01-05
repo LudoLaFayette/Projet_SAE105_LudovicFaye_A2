@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fémokipédia, la vraie page des femmes sans point de vue">
+    <title>Artificial - Spike Jonze</title>
+    <link rel='stylesheet' href='src/css/styles.css'>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>   
+</head>
+
+
+<body x-data="{ atTop: true }">
+
+    <header class="header container" 
+                    @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+                    :class="{ 'header--atTop' : !atTop }" >
+
+
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+    
+        <!-- Menu principal -->
+        
+                <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                    <ul class="menu__list list-unstyled">
+                        <li class="menu__item"><a class="menu__link" href="index.html">Acceuil</a></li>
+                        <li class="menu__item"><a class="menu__link" href="Her.html">Her</a></li>
+                        <li class="menu__item"><a class="menu__link" href="Spike Jonze.html">Spike Jonze</a></li>
+                        <li class="menu__item"><a class="menu__link" href="Blade Runner.html">Blade runner</a></li> 
+                        <li class="menu__item"><a class="menu__link" href="Philip. K Dick.html">Philip. K Dick</a></li>               
+                        <li class="menu__item"><a class="menu__link" href="a propos.html">A propos</a></li>
+                        <li class="menu__item menu__item--btn"><a class="menu__link" href="nous contacter.html">Contact</a></li>
+                        <li class="menu__item"><a class="menu__link" href="autres projets.html">Autres projets</a></li>
+                    </ul>
+                </nav>
+        <!-- Fin du menu principal -->
+    
+            </div>
+            
+       
+            <h1>Artificial</h1>
+    </header>
+
+    
+    <main>
+
+        <div class="header__tampon"></div>
+        <img src="public/img/Image 1 7 (2).webp" alt="Blade Runner">
+
+        <div class="article__titre">
+            <h2>Blade Runner</h2>
+        </div>
+
+        <h2>
+            Où est l’humanité ?
+        </h2>
+
+        <article class="article__intro">
+            Dans Blade Runner (ou Les androïdes rêvent-ils de
+moutons électriques ?), Philip K Dick nous emmène
+dans un monde où seulement quelques humains
+vivent sur Terre. Les Intelligences Artificielles et les
+Hommes se ressemblent à un point près. Les Hommes ont de l’empathie.
+        </article>
+
+    <article>
+        Bienvenue sur Terre, nous sommes en 1992. Cette
+planète qui habitait autrefois les Hommes n’est plus
+rien. Elle n’est que vestiges d’une guerre nucléaire.
+    </article>
+
+    <figure>
+        <img src="public/img/Image -3 1.webp" alt="Couverture de Blade Runner">
+        <figcaption>
+            Couverture de Blade Runner
+        </figcaption>
+    </figure>
+<h2>
+    Où sont les Hommes ?
+</h2>
+
+<article>
+    Les Hommes ont quittés la Terre pour se
+réfugier sur Mars. Mais quelques-uns y sont
+encore. Soit parce qu’ils sont contaminés, soit
+parce que ce sont des blades runners. Les
+blades runners sont des chasseurs d’androïdes .
+Rick Deckard fait partie de ceux-là. Il vit à San
+Francisco avec sa femme et un mouton
+électrique.
+</article>
+
+<h2>
+    Une chasse pour un peu d’humanité
+</h2>
+
+<article>
+    Voilà que 6 androïdes, des Nexus 6, viennent de
+s’échapper de Mars et sont arrivés sur Terre.
+C’est alors que la chasse à l’androïde
+commence. Rick se donne pour mission de les
+retrouver et de les tuer. Mais il ne fait pas ça
+pour rien. Lui qui espère tant posséder un vrai
+mouton souhaiterait en réclamer un comme
+récompense. En effet, rares sont les animaux sur
+Terre. Rare est l’humanité qui y est présente.
+</article>
+
+</body>
