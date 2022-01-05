@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artificial">
+    <title>Artificial - Blade Runner</title>
+    <link rel='stylesheet' href='src/css/styles.css'>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>   
+</head>
+
+
+<body x-data="{ atTop: true }">
+
+    <header class="header container" 
+                    @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+                    :class="{ 'header--atTop' : !atTop }" >
+
+
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+    
+        <!-- Menu principal -->
+        
+                <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                    <ul class="menu__list list-unstyled">
+                        <li class="menu__item"><a class="menu__link" href="index.html">Acceuil</a></li>
+                        <li class="menu__item"><a class="menu__link" href="Her.html">Her</a></li>
+                        <li class="menu__item"><a class="menu__link" href="Spike Jonze.html">Spike Jonze</a></li>
+                        <li class="menu__item"><a class="menu__link" href="Blade Runner.html">Blade runner</a></li> 
+                        <li class="menu__item"><a class="menu__link" href="Philip. K Dick.html">Philip. K Dick</a></li>               
+                        <li class="menu__item"><a class="menu__link" href="a propos.html">A propos</a></li>
+                        <li class="menu__item menu__item--btn"><a class="menu__link" href="nous contacter.html">Contact</a></li>
+                        <li class="menu__item"><a class="menu__link" href="autres projets.html">Autres projets</a></li>
+                    </ul>
+                </nav>
+        <!-- Fin du menu principal -->
+    
+            </div>
+            
+       
+            <h1>Artificial</h1>
+    </header>
+
+<main>
+    <div class="header__tampon"></div>
+    <h2 class="h2__premier2"> À propos</h2>
+
+    <article class="article2">
+        Salut ! <br>
+Je m’appelle PierrePolJ et je suis étudiant à
+MMi Montbéliard. <br>
+Ce projet a été réalisé dans le cadre d’un
+exercice pédagogique au département
+<i>MMi de Montbéliard.</i>
+    </article>
+
+    <figure>
+        <img src="public/img/LogoMMi 1.webp" alt="logo MMi">
+    </figure>
+
+    <article class="article2">
+        Si vous avez aimé ARTICIFIAL, je vous
+invite à me contacter !
+    </article>
+    <div class="footer__logos">
+        <img src="public/img/Icone Facebook 1.webp" alt="Facebook logo" height="40" width="40">
+        <img src="public/img/Icon Instagram 2.webp" alt="Icon Instagram" height="40" width="40">
+        <img src="public/img/Icone Mail 2.webp" alt="mail du site" width="40" height="40">
+    </div>
+
+
+</main>
+
+</body>

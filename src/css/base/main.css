@@ -87,6 +87,15 @@ article{
   line-height: 1.50;
   margin: 30px 45px;
 }
+
+.article2{
+  font-family: var(--font-texte-main);
+  font-weight: 400;
+  font-size:16px;
+  line-height: 1.50;
+  margin: 30px 45px;
+  text-align: center;
+}
 .article__livresEx{
   font-family: var(--font-texte-main);
   font-weight: 400;
@@ -98,15 +107,18 @@ article{
 
 
 main h2{
-  margin-top: 25px;
   font-family: var(--font-texte-subtitle);
   margin: 20px 20px;
 }
 
 .h2__premier{
-  margin-top: 25px;
   font-family: var(--font-texte-subtitle);
-  margin: 20px 20px;
+  margin: 25px 20px;
+ text-align: center;
+}
+.h2__premier2{
+  font-family: var(--font-texte-subtitle);
+  margin: 60px 20px;
  text-align: center;
 }
 
