@@ -120,6 +120,7 @@ main h2{
 }
 .contact__bkgrd{
   background: linear-gradient(180deg, rgb(254,178,47) 0%, rgb(217,45,60) 85%);
+  min-height : 100vh;
 }
 
 .h2__premier{
@@ -156,32 +157,34 @@ pour faire disparaître le scroll sur safari IOS */
 }
 
 .contact__formulaire{
-  width: 200px;
 clear: both;
 margin-left: 8px;
 
 }
 .contact__formulaire input{
-width: 300px;
+width: 100%;
 height: 30px;
 clear: both;
-margin: 20px 20px;
+margin: 20px 0px;
 border-radius: 8px 8px 8px 8px;
 }
 .contact__formulaire textarea{
-  margin-top: 8px;
-  width:300px;
-  height:300px;
+  margin-top: 20px;
+  width:100%;
   border-radius: 8px 8px 8px 8px;
-  margin: 20px 20px 60px 20px;
-  z-index:3;
+  border:none;
 }
 .contact__textarea{
   background: white;
-  margin-top: 8px;
-  width:300px;
-  height: 250px;
+  margin-top: 20px;
+  width:100%;
   border-radius: 8px 8px 8px 8px;
-  margin: 20px 20px 60px 20px;
-  z-index:1;
+}
+.contact__button{
+    padding-left: 220px;
+    padding-bottom: 10px;
+    color: var(--menu-button);
+    text-transform: uppercase;
+    font-family: var(--font-texte-header);
+    font-weight: bold;
 }
