@@ -36,6 +36,7 @@ figcaption{
     font-style: italic;
     font-size: 15px;
     font-weight: 300;
+    /*background-color: var(--menu-button);*/
 }
 .her__image4{
     margin: auto;

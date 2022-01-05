@@ -58,7 +58,30 @@ function carrouselAlternate() {
         }
     });
     anim15.add({
-        translateX: [{value: 500, easing: 'easeInOutCubic', duration: d},
-                     {value: 500, duration: 0, delay: delta}]
+        translateX: [{value: 350, easing: 'easeInOutCubic', duration: d},
+                     {value: -350, duration: 0, delay: delta}]
     })
+}
+
+function monterLegende(cla) {
+    document.querySelector('.'+cla).style.display='block';
+    return anime({
+        targets: '.'+cla,
+        translateY: '-5em',
+        autoplay:false,
+        easing: 'linear',
+        duration : 200
+    }).play;
+}
+
+function descendreLegende(cla) {
+    document.querySelector('.'+cla).style.display='block';
+    return anime({
+        targets: '.'+cla,
+        translateY: '0em',
+        autoplay:false,
+        easing: 'linear',
+        duration : 200
+    }).play;
+	
 }

@@ -8,6 +8,8 @@
     <title>Artificial - HER</title>
     <link rel='stylesheet' href='src/css/styles.css'>
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>   
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+	<script src="src/js/functions.js"></script>   
 </head>
 
 
@@ -80,18 +82,18 @@ ensemble. La question de leurs différences se pose alors. Sommes-nous pareils o
                 d’autant plus immersive.    
             </article>
 
-            <figure>
+            <figure class="image images13" x-on:mouseover="monterLegende('fig1');" x-on:mouseleave="descendreLegende('fig1');">
                 <img src="public/img/AfficheHer.webp" alt="affiche de Her">
-                <figcaption>
+                <figcaption class="fig1">
                     Affiche de HER
                 </figcaption>
             </figure>
 
         </div>
 
-        <figure>
+        <figure class="image images13" x-on:mouseover="monterLegende('fig2');" x-on:mouseleave="descendreLegende('fig2');">
             <img src="public/img/Her-Article2.webp" alt="Théodore Twombly dans HER">
-            <figcaption>
+            <figcaption class='fig2'>
                 Théodore Twombly dans HER
             </figcaption>
         </figure>
@@ -128,12 +130,12 @@ Humain et une Intelligence Artificielle.
 
         </article>
 
-        <figure>
+        <figure class="image images13" x-on:mouseover="monterLegende('fig3');" x-on:mouseleave="descendreLegende('fig3');">
             <img src="public/img/Her-Article3.webp" alt="Théodore Twombly dans HER">
-            <figcaption>
+            <figcaption class="fig3">
                 Théodore Twombly dans HER
             </figcaption>
-        </figure>
+        </figure> 
 
         <h2>Peut-on réellement tomber amoureux
             d’une Intelligence Artificielle ?
