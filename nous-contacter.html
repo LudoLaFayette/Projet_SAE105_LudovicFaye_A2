@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Artificial">
-    <title>Artificial - À propos</title>
+    <title>Artificial - Contact</title>
     <link rel='stylesheet' href='src/css/styles.css'>
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>   
 </head>
@@ -40,40 +40,34 @@
                 </nav>
         <!-- Fin du menu principal -->
     
-            </div>
+       
             
        
             <h1>Artificial</h1>
     </header>
 
-<main>
+<main class="contact__bkgrd">
     <div class="header__tampon"></div>
-    <h2 class="h2__premier2"> À propos</h2>
+    <h2 class="h2__premier2"> Contact</h2>
 
-    <article class="article2">
-        Salut ! <br>
-Je m’appelle PierrePolJ et je suis étudiant à
-MMi Montbéliard. <br>
-Ce projet a été réalisé dans le cadre d’un
-exercice pédagogique au département
-<i>MMi de Montbéliard.</i>
-    </article>
+<article class="article3">
+    Besoin de plus d’informations ? <br>
+Posez-moi vos questions !
+</article>
+<div class="contact__formulaire">
+    <form method="get" style="
+    padding: 0 20px;">
 
-    <figure>
-        <img src="public/img/LogoMMi 1.webp" alt="logo MMi">
-    </figure>
+            <input  type="text" required value placeholder="Nom">
+        
+            <input type="text" required value placeholder="Prénom">
 
-    <article class="article2">
-        Si vous avez aimé ARTICIFIAL, je vous
-invite à me contacter !
-    </article>
-    <div class="footer__logos">
-        <img src="public/img/Icone Facebook 1.webp" alt="Facebook logo" height="40" width="40">
-        <img src="public/img/Icon Instagram 2.webp" alt="Icon Instagram" height="40" width="40">
-        <img src="public/img/Icone Mail 2.webp" alt="mail du site" width="40" height="40">
-    </div>
-
-
+            <div class="contact__textarea">
+                <textarea id="message" name="message" required placeholder="Message" rows="10"></textarea>
+                <hr>
+                <button class="contact__button">Découvrir</button>
+            </div>
+            
+    </form>
+</div>
 </main>
-
-</body>
