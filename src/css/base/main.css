@@ -87,6 +87,14 @@ article{
   line-height: 1.50;
   margin: 30px 45px;
 }
+.article__livresEx{
+  font-family: var(--font-texte-main);
+  font-weight: 400;
+  font-size:16px;
+  line-height: 1.50;
+  margin: 30px 45px;
+  text-align: center;
+}
 
 
 main h2{

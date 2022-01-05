@@ -60,3 +60,11 @@ figcaption{
     font-size: 18px;
     font-weight: 300;
 }
+.article__figcaption3{
+    display: flex;
+    justify-content: center;
+    margin: -30px 20px 20px 20px;
+    font-family: var(--font-texte-intro);
+    font-style: italic;
+    font-size: 12px;
+}
